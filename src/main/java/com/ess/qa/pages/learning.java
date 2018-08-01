@@ -34,13 +34,7 @@ public class learning {
         return data;
     }
 
-    public static void main(String[] args)
-    {
 
-        learning lern=new learning();
-        lern.getTestData(String Book);
-
-    }
 
 
 }

@@ -18,6 +18,8 @@ public class LoginPage extends TestBase {
     @FindBy(id="login-button")
     WebElement loginButton;
 
+
+
 //    @FindBy(xpath="//img[contains(@class,'')]")
 
     //inittalizing the page objects
@@ -32,7 +34,8 @@ public class LoginPage extends TestBase {
     }
 
 
-    public HomePage login(String username,String password)
+
+    public  HomePage login(String username, String password)
     {
         this.username.sendKeys(username);
         this.password.sendKeys(password);
