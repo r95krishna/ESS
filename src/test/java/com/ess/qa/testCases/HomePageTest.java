@@ -64,28 +64,12 @@ public class HomePageTest extends TestBase {
         homePage.HelpdeskTabClick();
         Thread.sleep(5000);
         homePage.ValidateNewRequest();
+    }
 
-        List<WebElement> list = driver.findElements(By.xpath("//ul[@class='dropdown-menu ng-star-inserted']/li/a"));
-
-        for (WebElement elm : list) {
-            System.out.println("values :" + elm.getAttribute("title"));
-
-
-            if (elm.getAttribute("title").contains("New Agent login ID needs to create .")) {
-                elm.click();
-
-
-                break;
-            }
-
-          /*  driver.findElement(By.xpath("//input[@id='subject']")).sendKeys("subject");
-            driver.findElement(By.xpath("//textarea[@id='comment']")).sendKeys("Description");
-
-
-            driver.findElement(By.xpath("//i[@class='icon-gt-attachment icon-link text-bold']")).sendKeys("C:\\Users\\Rahul Krishna\\Pictures\\Help desk\\Capture.png");
-*/
-
-        }
+    @Test(priority = 5)
+    public void ValidatelistingTest(){
+        homePage.HelpdeskTabClick();
+        homePage.Validatelisting();
 
     }
 }

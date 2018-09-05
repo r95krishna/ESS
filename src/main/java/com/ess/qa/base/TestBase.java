@@ -19,8 +19,7 @@ public class TestBase {
 
             try{
                   prop=new Properties();
-                  FileInputStream fi= new FileInputStream("C:\\Users\\RAhul Krishna\\IdeaProjects\\Ess_Test" +
-                          "\\src\\main\\java\\com\\ess\\qa\\config\\config.properties");
+                  FileInputStream fi= new FileInputStream("C:\\Users\\Rahul Krishna\\IdeaProjects\\ESS\\src\\main\\java\\com\\ess\\qa\\config\\config.properties");
 
                   prop.load(fi);
 
@@ -48,7 +47,7 @@ public class TestBase {
 
          if(BrowserName.equals("chrome")){
 
-             System.setProperty("webdriver.chrome.driver", "C:\\Users\\RAhul Krishna\\IdeaProjects\\chromedriver\\chromedriver.exe");
+             System.setProperty("webdriver.chrome.driver", "C://Users//Rahul Krishna//IdeaProjects//ESS//chromedriver//chromedriver.exe");
              driver=new ChromeDriver();
          }
 

@@ -104,15 +104,11 @@
             <artifactId>openxml4j</artifactId>
             <version>1.0-beta</version>
         </dependency>
-
-
-
-
-
-
-
-
-
+        <dependency>
+            <groupId>org.codehaus.plexus</groupId>
+            <artifactId>plexus-interpolation</artifactId>
+            <version>1.13</version>
+        </dependency>
 
 
     </dependencies>

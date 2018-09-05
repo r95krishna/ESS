@@ -9,5 +9,8 @@
         <module name="Ess_Test" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Ess_Test" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
