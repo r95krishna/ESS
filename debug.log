@@ -29,3 +29,9 @@
 [0828/191223.548:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
 [0828/191223.548:ERROR:exception_snapshot_win.cc(88)] thread ID 14396 not found in process
 [0828/191223.548:ERROR:exception_snapshot_win.cc(88)] thread ID 16788 not found in process
+[0906/112607.929:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[0907/112612.491:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[0908/112614.549:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[0909/112614.550:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[0910/112617.391:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[0911/112617.392:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports

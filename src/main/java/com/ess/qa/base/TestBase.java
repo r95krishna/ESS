@@ -20,9 +20,7 @@ public class TestBase {
             try{
                   prop=new Properties();
                   FileInputStream fi= new FileInputStream("C:\\Users\\Rahul Krishna\\IdeaProjects\\ESS\\src\\main\\java\\com\\ess\\qa\\config\\config.properties");
-
                   prop.load(fi);
-
             }
 
             catch (FileNotFoundException e) {

@@ -3,12 +3,14 @@ package com.ess.qa.testCases;
 import com.ess.qa.base.TestBase;
 import com.ess.qa.pages.HomePage;
 import com.ess.qa.pages.LoginPage;
+import com.ess.qa.util.TestUtil;
 import org.openqa.selenium.*;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.awt.*;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,7 +19,7 @@ public class HomePageTest extends TestBase {
     LoginPage loginPage;
     HomePage homePage;
     LoginPageTest loginPageTest;
-
+    TestUtil testUtil;
 
     @BeforeMethod
     public void setup() {
@@ -25,6 +27,7 @@ public class HomePageTest extends TestBase {
         loginPage = new LoginPage();
         homePage = new HomePage();
         loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+        testUtil= new TestUtil();
     }
 
 
@@ -67,9 +70,9 @@ public class HomePageTest extends TestBase {
     }
 
     @Test(priority = 5)
-    public void ValidatelistingTest(){
+    public void ValidatelistingTest() throws InterruptedException, IOException {
         homePage.HelpdeskTabClick();
         homePage.Validatelisting();
-
+        testUtil.TakeScreenshot();
     }
 }
